@@ -38,9 +38,9 @@ const resolvers = {
   Product: {
     priceWithDiscount(parent) {
       if (parent.discount) {
-        return parent.price * (1 - parent.discount)
+        return parent.price * (1 - parent.discount);
       }
-      return parent.price
+      return parent.price;
     },
   },
 
@@ -61,14 +61,19 @@ const resolvers = {
     featuredProduct() {
       return {
         name: "Celular",
-        price: 1.500,
+        price: 1.5,
         discount: 0.15,
       };
     },
-    lotteryNumbers(){
-        const ascendingOrder = (a, b) => a - b
-        return new Set(Array(6).fill(0).map(n => parseInt(Math.random() * 60 + 1)).sort(ascendingOrder))
-    }
+    lotteryNumbers() {
+      const ascendingOrder = (a, b) => a - b;
+      return new Set(
+        Array(6)
+          .fill(0)
+          .map((n) => parseInt(Math.random() * 60 + 1))
+          .sort(ascendingOrder)
+      );
+    },
   },
 };
 
