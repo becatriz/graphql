@@ -5,6 +5,7 @@ const users = [
     email: "bia@gmail.com",
     age: 29,
     profile_id: 1,
+    status: "ENABLED",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const users = [
     email: "kou@gmail.com",
     age: 48,
     profile_id: 2,
+    status: "DISABLED",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const users = [
     email: "iuu@gmail.com",
     age: 18,
     profile_id: 1,
+    status: "BLOCKED",
   },
 ];
 
