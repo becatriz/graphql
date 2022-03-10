@@ -1,4 +1,4 @@
-const { users } = require("../../../data/db");
+const { users, profiles } = require("../../../data/db");
 
 function getUsers() {
   return users;
@@ -9,7 +9,18 @@ function user(_, { id }) {
   return selected ? selected : null;
 }
 
+function getUsersByProfile(_, { name }) {
+  const profileSelected = profiles.find((profile) => profile.name === name);
+
+  const usersSelectedByProfile = users.filter(
+    (user) => user.profile_id === profileSelected.id
+  );
+
+  return usersSelectedByProfile;
+}
+
 module.exports = {
   user,
   getUsers,
+  getUsersByProfile,
 };

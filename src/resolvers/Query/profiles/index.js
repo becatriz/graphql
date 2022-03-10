@@ -4,8 +4,10 @@ function getProfiles() {
   return profiles;
 }
 
-function profile(_, { id }) {
-  const selected = profiles.find((profile) => profile.id === id);
+function profile(_, { id, name }) {
+  const selected = profiles.find(
+    (profile) => profile.id === id || profile.name === name
+  );
   return selected ? selected : null;
 }
 

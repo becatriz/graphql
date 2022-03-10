@@ -3,5 +3,6 @@ type Query {
   getUsers: [User]!
   user(id: Int): User
   getProfiles: [Profile]!
-  profile(id: Int): Profile
+  profile(id: Int, name: String): Profile
+  getUsersByProfile(name: String): [User]
 }

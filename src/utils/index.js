@@ -1,7 +1,11 @@
 const { findIndex } = require("./findIndex");
-const { validatesExistingEmail } = require("./validate");
+const {
+  validatesExistingProfile,
+  validatesExistingEmail,
+} = require("./validate");
 
 module.exports = {
   findIndex,
+  validatesExistingProfile,
   validatesExistingEmail,
 };
