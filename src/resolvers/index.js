@@ -1,11 +1,9 @@
-const Query = require("./Query");
+const Query = require("./Query/users");
 const User = require("./User");
-const Product = require("./Product");
-const Mutation = require("./Mutation");
+const Mutation = require("./Mutation/users");
 
 module.exports = {
   Query,
   User,
-  Product,
   Mutation,
 };

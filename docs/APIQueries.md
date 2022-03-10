@@ -67,6 +67,22 @@ mutation {
       name
     }
   }
+  # Using input
+  removeUser(filter: { id: 1 }) {
+    id
+    name
+  }
+
+  # Using input
+  updateUser(
+    filter: { email: "kou@gmail.com" }
+    data: { email: "arrazou@gmail.com", age: 100 }
+  ) {
+    id
+    name
+    email
+    age
+  }
   removeUser(id: 4) {
     id
     name
