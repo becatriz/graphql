@@ -1,8 +1,8 @@
 const { users } = require("../../../data/db");
-const { findUserIndex } = require("../../../utils");
+const { findIndex } = require("../../../utils");
 
 function removeUser(_, { filter }) {
-  const userIndex = findUserIndex(filter);
+  const userIndex = findIndex(filter);
 
   if (userIndex < 0) return null;
 

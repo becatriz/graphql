@@ -1,8 +1,8 @@
 const { users } = require("../../../data/db");
-const { findUserIndex } = require("../../../utils/index");
+const { findIndex } = require("../../../utils/index");
 
 function updateUser(_, { filter, data }) {
-  const userIndex = findUserIndex({ ...filter });
+  const userIndex = findIndex({ ...filter });
 
   if (userIndex < 0) return null;
 

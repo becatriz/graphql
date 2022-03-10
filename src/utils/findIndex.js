@@ -2,7 +2,7 @@ const { users } = require("../data/db");
 
 const NOT_FOUND = -1;
 
-function findUserIndex(filter) {
+function findIndex(filter) {
   if (!filter) return NOT_FOUND;
 
   const { id, email } = filter;
@@ -17,5 +17,5 @@ function findUserIndex(filter) {
 }
 
 module.exports = {
-  findUserIndex,
+  findIndex,
 };

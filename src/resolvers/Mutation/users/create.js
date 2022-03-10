@@ -1,7 +1,7 @@
 const { validatesExistingEmail } = require("../../../utils");
 const { users, nextId } = require("../../../data/db");
 
-function newUser(_, { data }) {
+function createUser(_, { data }) {
   const isEmailExists = validatesExistingEmail(data.email);
 
   if (isEmailExists) {
@@ -21,5 +21,5 @@ function newUser(_, { data }) {
 }
 
 module.exports = {
-  newUser,
+  createUser,
 };

@@ -1,9 +1,9 @@
-const { newUser } = require("./NewUser");
-const { removeUser } = require("./RemoveUser");
-const { updateUser } = require("./UpdateUser");
+const { createUser } = require("./create");
+const { removeUser } = require("./remove");
+const { updateUser } = require("./update");
 
 module.exports = {
-  newUser,
+  createUser,
   removeUser,
   updateUser,
 };
