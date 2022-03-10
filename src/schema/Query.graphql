@@ -4,8 +4,8 @@ type Query {
   loggedInUser: User!
   featuredProduct: Product!
   lotteryNumbers: [Int]!
-  users: [User]!
+  getUsers: [User]!
   user(id: Int): User
-  profiles: [Profile]!
+  getProfiles: [Profile]!
   profile(id: Int): Profile
 }

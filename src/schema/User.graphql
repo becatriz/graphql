@@ -11,11 +11,17 @@ type Profile {
 
 type User {
   id: Int!
-  name: String!
+  name: String
   email: String!
   age: Int
   salary: Float
   vip: Boolean
   profile: Profile
   status: StatusUser
+}
+
+input userInput {
+  name: String
+  email: String
+  age: Int
 }

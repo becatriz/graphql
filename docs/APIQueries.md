@@ -45,3 +45,35 @@ query {
   }
 }
 ```
+
+## API Mutations Documentation
+
+```graphql
+mutation {
+  newUser(name: "Rebekia", email: "rebekia@gmail.com", age: 29) {
+    id
+    name
+    email
+    profile {
+      name
+    }
+  }
+  # Using input
+  newUser(data: { name: "Rebekia", email: "redbekia@gmail.com", age: 29 }) {
+    id
+    name
+    email
+    profile {
+      name
+    }
+  }
+  removeUser(id: 4) {
+    id
+    name
+  }
+  updateUser(id: 1, name: "Rebeca") {
+    id
+    name
+  }
+}
+```
