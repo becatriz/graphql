@@ -49,14 +49,14 @@ function removeUser(_, { filter }) {
   return userRemoved ? userRemoved[0] : null;
 }
 
-function updateUser(_, { filter }) {
-  const userIndex = findUserIndex(filter);
+function updateUser(_, { filter, data }) {
+  const userIndex = findUserIndex({ ...filter });
 
   if (userIndex < 0) return null;
 
   const user = {
     ...users[userIndex],
-    ...filter,
+    ...data,
   };
 
   users.splice(userIndex, 1, user);

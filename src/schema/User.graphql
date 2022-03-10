@@ -30,6 +30,4 @@ input userInput {
 input userFilter {
   id: Int
   email: String
-  name: String
-  age: Int
 }
