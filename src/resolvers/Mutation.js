@@ -7,7 +7,7 @@ function validatesExistingEmail(email) {
 }
 
 function findUserIndex(filter) {
-  if (!filter?.id) return NOT_FOUND;
+  if (!filter) return NOT_FOUND;
 
   const { id, email } = filter;
 
