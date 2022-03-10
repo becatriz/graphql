@@ -1,9 +1,5 @@
 # API Entry Points
 type Query {
-  currentTime: Date! # Exclamation means that the return is mandatory
-  loggedInUser: User!
-  featuredProduct: Product!
-  lotteryNumbers: [Int]!
   getUsers: [User]!
   user(id: Int): User
   getProfiles: [Profile]!

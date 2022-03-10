@@ -4,11 +4,6 @@ enum StatusUser {
   BLOCKED
 }
 
-type Profile {
-  id: Int
-  name: String
-}
-
 type User {
   id: Int!
   name: String

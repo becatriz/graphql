@@ -1,5 +1,5 @@
-#import User, Profile from "User.graphql"
-#import Product from "Product.graphql"
+#import User from "User.graphql"
+#import Profile from "Profile.graphql"
 #import Query from "Query.graphql"
 #import Mutation from "Mutation.graphql"
 
