@@ -1,12 +1,11 @@
 const { users, profiles } = require("../../../data/db");
 
-function getUsers() {
-  return users;
-}
-
 function user(_, { id }) {
   const selected = users.find((user) => user.id === id);
   return selected ? selected : null;
+}
+function getUsers() {
+  return users;
 }
 
 function getUsersByProfile(_, { name }) {
